@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GFSnackBarView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GFSnackBarView.'
+  s.summary          = 'Simple and customizable Snackbar.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'GFSnackBarView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'GFSnackBarView' => ['GFSnackBarView/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'GFSnackBarView' => ['GFSnackBarView/Assets/*.xib']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

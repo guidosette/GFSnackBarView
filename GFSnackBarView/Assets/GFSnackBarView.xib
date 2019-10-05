@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GFSnackBarView">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="176"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Errore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fw1-08-JTl">
+                    <rect key="frame" x="16" y="49.5" width="403" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.18431372549019609" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ndd-U2-hua">
+                    <rect key="frame" x="207.5" y="50" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Message lungo lungo lungo " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHz-YC-kwG">
+                    <rect key="frame" x="16" y="78" width="403" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-kO-aCl">
+                    <rect key="frame" x="202.5" y="98.5" width="30" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.5568627451" green="0.83137254900000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-9a-VGC">
+                    <rect key="frame" x="202.5" y="98.5" width="30" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.18431372549019609" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9QV-9a-VGC" firstAttribute="top" secondItem="pHz-YC-kwG" secondAttribute="bottom" id="6ZD-Pb-FSj"/>
+                <constraint firstItem="fw1-08-JTl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="8mV-mt-1ti"/>
+                <constraint firstItem="Pjk-kO-aCl" firstAttribute="top" secondItem="pHz-YC-kwG" secondAttribute="bottom" id="ABc-8v-pTL"/>
+                <constraint firstItem="pHz-YC-kwG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hrm-81-UHJ"/>
+                <constraint firstItem="pHz-YC-kwG" firstAttribute="top" secondItem="fw1-08-JTl" secondAttribute="bottom" constant="8" id="Ik7-uh-arH"/>
+                <constraint firstItem="pHz-YC-kwG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Y4P-vt-gWB"/>
+                <constraint firstAttribute="trailing" secondItem="pHz-YC-kwG" secondAttribute="trailing" constant="16" id="ZNR-Xs-Wx8"/>
+                <constraint firstItem="9QV-9a-VGC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ncj-X9-n3O"/>
+                <constraint firstItem="ndd-U2-hua" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oIB-6H-f2d"/>
+                <constraint firstItem="Pjk-kO-aCl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xJr-Se-by2"/>
+                <constraint firstItem="pHz-YC-kwG" firstAttribute="top" secondItem="ndd-U2-hua" secondAttribute="bottom" constant="8" id="yCL-Ht-0FS"/>
+                <constraint firstAttribute="trailing" secondItem="fw1-08-JTl" secondAttribute="trailing" constant="16" id="yNS-Tf-EkC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonCancel" destination="9QV-9a-VGC" id="lw2-jd-AmW"/>
+                <outlet property="buttonCancelConstraintX" destination="ncj-X9-n3O" id="eNK-ee-KP3"/>
+                <outlet property="buttonDone" destination="Pjk-kO-aCl" id="DvK-MQ-ZJT"/>
+                <outlet property="buttonDoneConstraintX" destination="xJr-Se-by2" id="L43-RT-TUA"/>
+                <outlet property="loading" destination="ndd-U2-hua" id="7rM-ls-rxu"/>
+                <outlet property="message" destination="pHz-YC-kwG" id="WYn-SJ-bpp"/>
+                <outlet property="title" destination="fw1-08-JTl" id="Y8T-LL-jLM"/>
+            </connections>
+            <point key="canvasLocation" x="-190.5" y="131"/>
+        </view>
+    </objects>
+</document>

@@ -7,6 +7,7 @@
 //
 
 #import "GFViewController.h"
+#import "GFSnackBarView.h"
 
 @interface GFViewController ()
 
@@ -17,13 +18,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction) showSimple {
+	[GFSnackBarView showWithMessage:@"Test"];
+}
+
+- (IBAction) showSimplePermanent {
+	[GFSnackBarView showWithMessage:@"Test" permanent:true];
+}
+
+- (IBAction) showSimpleError {
+	[GFSnackBarView showWithMessage:@"Test error" withTitleError:@"Error"];
+}
+
+- (IBAction) showSimpleErrorPermanent {
+	[GFSnackBarView showWithMessage:@"Test" withTitleError:@"Error" permanent:true];
+}
+
+- (IBAction) showMessageWithLoading {
+	[GFSnackBarView showMessageWithLoading:@"Test"];
+}
+
+- (IBAction) showMessageCallback {
+	[GFSnackBarView showWithMessage:@"Test" withTitleError:@"Error" buttonDoneLabel:@"Ok" buttonDoneCallback:^{
+		NSLog(@"Done");
+	}];
+}
+
+- (IBAction) showMessageConfirmCallback {
+	[GFSnackBarView showWithMessage:@"Test" withTitleError:@"Error" buttonDoneLabel:@"Ok" buttonDoneCallback:^{
+		NSLog(@"Done");
+	} buttonCancelLabel:@"Cancel" buttonCancelCallback:^{
+		NSLog(@"Cancel");
+	}];
 }
 
 @end

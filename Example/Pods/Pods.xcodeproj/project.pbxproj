@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		129EA1B43B0FCDEC30A5A7BE5A205AF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		625A2FB211532074D1616C3691AEF6DF /* GFSnackBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D54880054DE0A5ADB863305817E7308 /* GFSnackBarView.m */; };
+		72CB61FB5E6063D05B510CA3303D653A /* Pods-GFSnackBarView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB126B6BDFC73B4667A3573DE50FAE13 /* Pods-GFSnackBarView_Example-dummy.m */; };
+		7B4013D183EF3041F79CEADC9F86CDC7 /* Pods-GFSnackBarView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 048D8D0692D0E70D63523DCDA7BA4E60 /* Pods-GFSnackBarView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E998AD127E231E54C66093900C5E4D5 /* GFSnackBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE23CDFE15AE6B52A02BF35F0C3E0749 /* GFSnackBarView.xib */; };
+		813EE3F0274296E7F5B6FF5CB992F70C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8812382EC3ECFC44E51C7BA231D4FBD9 /* GFSnackBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3F814A2B1E80FA3B33B864196F2D00 /* GFSnackBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE05F40ED032E036080DFC841EE71A1 /* Pods-GFSnackBarView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43600C9B179BD50CB9A110DC418E5B42 /* Pods-GFSnackBarView_Tests-dummy.m */; };
+		911A6C31A5BD8BF83004373EFF60ACD2 /* GFSnackBarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D051191F95A2987C1DDFD8E7FABCA90 /* GFSnackBarView-dummy.m */; };
+		D7D6AED55592A349CF180A67131AB2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EEC804D0644CD42902041002163C6CA0 /* GFSnackBarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31348773F6BF92C3215C41776D949520 /* GFSnackBarView.bundle */; };
+		F05405A6DE9C94F6BC039CC118A3AAF1 /* Pods-GFSnackBarView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A49838EF8246480324CD1DAE6754F58 /* Pods-GFSnackBarView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74CCFEB09AE48501C6A11AE709D3771 /* GFSnackBarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2AFEF0AE5ADB1B385FEA7D752F73CB /* GFSnackBarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06FDDD64F07596B31A357B3770A91931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D530B8322EDC27AC37419BCFD1F50BFA;
+			remoteInfo = GFSnackBarView;
+		};
+		3071EDE900C508CD33EF82724982B8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D10E9C6CA21CE6619418F4069D8E144;
+			remoteInfo = "Pods-GFSnackBarView_Example";
+		};
+		B51ABFFC97BA8EE1566719384CB85530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8906A2ECB0A2B25C08FDD8538E7AFE;
+			remoteInfo = "GFSnackBarView-GFSnackBarView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048D8D0692D0E70D63523DCDA7BA4E60 /* Pods-GFSnackBarView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GFSnackBarView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0C6EA47CC5DA187FBB1D6325621E5240 /* Pods-GFSnackBarView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFSnackBarView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		23C2F8A1E1A1C1AA2C5A1FFF4F9FD0C1 /* Pods_GFSnackBarView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GFSnackBarView_Example.framework; path = "Pods-GFSnackBarView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4B9A0911009A39DCCC4034D0659318 /* Pods_GFSnackBarView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GFSnackBarView_Tests.framework; path = "Pods-GFSnackBarView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AFFD838BB4E8D0BE23F25CAD70157F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		31348773F6BF92C3215C41776D949520 /* GFSnackBarView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GFSnackBarView.bundle; path = "GFSnackBarView-GFSnackBarView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43600C9B179BD50CB9A110DC418E5B42 /* Pods-GFSnackBarView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GFSnackBarView_Tests-dummy.m"; sourceTree = "<group>"; };
+		4B01DFF0F550313DCA9894DD95C598FF /* Pods-GFSnackBarView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GFSnackBarView_Example-Info.plist"; sourceTree = "<group>"; };
+		4E3F814A2B1E80FA3B33B864196F2D00 /* GFSnackBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GFSnackBarView.h; path = GFSnackBarView/Classes/GFSnackBarView.h; sourceTree = "<group>"; };
+		54BAF1370E5376F85087E29E026FEB0D /* GFSnackBarView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GFSnackBarView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5C1892D4FFD285A5950C16B1E09657BD /* Pods-GFSnackBarView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GFSnackBarView_Example.modulemap"; sourceTree = "<group>"; };
+		5CDB737BB6C409A8700ABC99D1C11A50 /* Pods-GFSnackBarView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GFSnackBarView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		611C1110AA494F75E6797D61D81C4ECB /* Pods-GFSnackBarView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFSnackBarView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6A49838EF8246480324CD1DAE6754F58 /* Pods-GFSnackBarView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GFSnackBarView_Example-umbrella.h"; sourceTree = "<group>"; };
+		6BC11BA2DDBEE5562FA93A13E8F22F3E /* Pods-GFSnackBarView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GFSnackBarView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C6122081DAC2ECAE5BC7E0B36F9F78B /* Pods-GFSnackBarView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GFSnackBarView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D051191F95A2987C1DDFD8E7FABCA90 /* GFSnackBarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GFSnackBarView-dummy.m"; sourceTree = "<group>"; };
+		8A2AFEF0AE5ADB1B385FEA7D752F73CB /* GFSnackBarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFSnackBarView-umbrella.h"; sourceTree = "<group>"; };
+		8E9AEA5D3E1214F3036E65C822E62939 /* GFSnackBarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GFSnackBarView.xcconfig; sourceTree = "<group>"; };
+		935255F5FD8CBC002745B974E930B278 /* GFSnackBarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GFSnackBarView-Info.plist"; sourceTree = "<group>"; };
+		9502CDF8C4978D550FD03FDE89C35525 /* ResourceBundle-GFSnackBarView-GFSnackBarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GFSnackBarView-GFSnackBarView-Info.plist"; sourceTree = "<group>"; };
+		971623FC85673C39B6445978BC483F61 /* Pods-GFSnackBarView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GFSnackBarView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D54880054DE0A5ADB863305817E7308 /* GFSnackBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GFSnackBarView.m; path = GFSnackBarView/Classes/GFSnackBarView.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A439A6211A90085343BFF314A4C54B09 /* GFSnackBarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFSnackBarView-prefix.pch"; sourceTree = "<group>"; };
+		A5E2372C9A0E236B41B14B26E64A68DE /* Pods-GFSnackBarView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFSnackBarView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDED4261FBA927C06EBA5458A1DE9D9A /* GFSnackBarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GFSnackBarView.modulemap; sourceTree = "<group>"; };
+		CB11C9AFB56231670897F74007480488 /* GFSnackBarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GFSnackBarView.framework; path = GFSnackBarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91D2F3BE1EA675B6F096116E00EBCDB /* Pods-GFSnackBarView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GFSnackBarView_Tests-Info.plist"; sourceTree = "<group>"; };
+		DB126B6BDFC73B4667A3573DE50FAE13 /* Pods-GFSnackBarView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GFSnackBarView_Example-dummy.m"; sourceTree = "<group>"; };
+		DCED4BE999FDC71D26DB96F433821A36 /* Pods-GFSnackBarView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GFSnackBarView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E9538C46B02A909C1D233D2704330328 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EA1573E42BF5F337BF97C802A0DA6300 /* Pods-GFSnackBarView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GFSnackBarView_Tests.modulemap"; sourceTree = "<group>"; };
+		EE23CDFE15AE6B52A02BF35F0C3E0749 /* GFSnackBarView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = GFSnackBarView.xib; path = GFSnackBarView/Assets/GFSnackBarView.xib; sourceTree = "<group>"; };
+		FF40E272DABF04175540D2FF36024609 /* Pods-GFSnackBarView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFSnackBarView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C848AFE594834EA431CFB8CA82F963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				129EA1B43B0FCDEC30A5A7BE5A205AF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1EF1BF57C9DBFD1DC8CF5E57706B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		823574877B3BB7CA5A09C1C8ED68CA70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813EE3F0274296E7F5B6FF5CB992F70C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D3003AFEC32DEE0D97E55FF2A0903A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D6AED55592A349CF180A67131AB2BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		443F24406BD03149E6E81C1ADF0A0F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDED4261FBA927C06EBA5458A1DE9D9A /* GFSnackBarView.modulemap */,
+				8E9AEA5D3E1214F3036E65C822E62939 /* GFSnackBarView.xcconfig */,
+				7D051191F95A2987C1DDFD8E7FABCA90 /* GFSnackBarView-dummy.m */,
+				935255F5FD8CBC002745B974E930B278 /* GFSnackBarView-Info.plist */,
+				A439A6211A90085343BFF314A4C54B09 /* GFSnackBarView-prefix.pch */,
+				8A2AFEF0AE5ADB1B385FEA7D752F73CB /* GFSnackBarView-umbrella.h */,
+				9502CDF8C4978D550FD03FDE89C35525 /* ResourceBundle-GFSnackBarView-GFSnackBarView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GFSnackBarView";
+			sourceTree = "<group>";
+		};
+		6EBC40E3FCB2484DC90A8B7DBA5B9C58 /* Pods-GFSnackBarView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EA1573E42BF5F337BF97C802A0DA6300 /* Pods-GFSnackBarView_Tests.modulemap */,
+				5CDB737BB6C409A8700ABC99D1C11A50 /* Pods-GFSnackBarView_Tests-acknowledgements.markdown */,
+				971623FC85673C39B6445978BC483F61 /* Pods-GFSnackBarView_Tests-acknowledgements.plist */,
+				43600C9B179BD50CB9A110DC418E5B42 /* Pods-GFSnackBarView_Tests-dummy.m */,
+				D91D2F3BE1EA675B6F096116E00EBCDB /* Pods-GFSnackBarView_Tests-Info.plist */,
+				048D8D0692D0E70D63523DCDA7BA4E60 /* Pods-GFSnackBarView_Tests-umbrella.h */,
+				A5E2372C9A0E236B41B14B26E64A68DE /* Pods-GFSnackBarView_Tests.debug.xcconfig */,
+				FF40E272DABF04175540D2FF36024609 /* Pods-GFSnackBarView_Tests.release.xcconfig */,
+			);
+			name = "Pods-GFSnackBarView_Tests";
+			path = "Target Support Files/Pods-GFSnackBarView_Tests";
+			sourceTree = "<group>";
+		};
+		6FD877C9F48CD26ABEAC81F77EA4B6B3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91BE177769710E526D3EB94EB60901D2 /* Pods-GFSnackBarView_Example */,
+				6EBC40E3FCB2484DC90A8B7DBA5B9C58 /* Pods-GFSnackBarView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		785E81F4D303481C1A31D8539198E022 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				54BAF1370E5376F85087E29E026FEB0D /* GFSnackBarView.podspec */,
+				30AFFD838BB4E8D0BE23F25CAD70157F /* LICENSE */,
+				E9538C46B02A909C1D233D2704330328 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		80139498F43845B9E0233AD9755E9C35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE23CDFE15AE6B52A02BF35F0C3E0749 /* GFSnackBarView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		91BE177769710E526D3EB94EB60901D2 /* Pods-GFSnackBarView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5C1892D4FFD285A5950C16B1E09657BD /* Pods-GFSnackBarView_Example.modulemap */,
+				7C6122081DAC2ECAE5BC7E0B36F9F78B /* Pods-GFSnackBarView_Example-acknowledgements.markdown */,
+				6BC11BA2DDBEE5562FA93A13E8F22F3E /* Pods-GFSnackBarView_Example-acknowledgements.plist */,
+				DB126B6BDFC73B4667A3573DE50FAE13 /* Pods-GFSnackBarView_Example-dummy.m */,
+				DCED4BE999FDC71D26DB96F433821A36 /* Pods-GFSnackBarView_Example-frameworks.sh */,
+				4B01DFF0F550313DCA9894DD95C598FF /* Pods-GFSnackBarView_Example-Info.plist */,
+				6A49838EF8246480324CD1DAE6754F58 /* Pods-GFSnackBarView_Example-umbrella.h */,
+				0C6EA47CC5DA187FBB1D6325621E5240 /* Pods-GFSnackBarView_Example.debug.xcconfig */,
+				611C1110AA494F75E6797D61D81C4ECB /* Pods-GFSnackBarView_Example.release.xcconfig */,
+			);
+			name = "Pods-GFSnackBarView_Example";
+			path = "Target Support Files/Pods-GFSnackBarView_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4F6BC26FBB6643BF287B5B774531B89 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0420A94CFDAC0C3EAE9D360A057080F /* GFSnackBarView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C4F6BC26FBB6643BF287B5B774531B89 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E572393D6A4301AD2BFCDDC3E02E7FDF /* Products */,
+				6FD877C9F48CD26ABEAC81F77EA4B6B3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0420A94CFDAC0C3EAE9D360A057080F /* GFSnackBarView */ = {
+			isa = PBXGroup;
+			children = (
+				4E3F814A2B1E80FA3B33B864196F2D00 /* GFSnackBarView.h */,
+				9D54880054DE0A5ADB863305817E7308 /* GFSnackBarView.m */,
+				785E81F4D303481C1A31D8539198E022 /* Pod */,
+				80139498F43845B9E0233AD9755E9C35 /* Resources */,
+				443F24406BD03149E6E81C1ADF0A0F98 /* Support Files */,
+			);
+			name = GFSnackBarView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E572393D6A4301AD2BFCDDC3E02E7FDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31348773F6BF92C3215C41776D949520 /* GFSnackBarView.bundle */,
+				CB11C9AFB56231670897F74007480488 /* GFSnackBarView.framework */,
+				23C2F8A1E1A1C1AA2C5A1FFF4F9FD0C1 /* Pods_GFSnackBarView_Example.framework */,
+				2F4B9A0911009A39DCCC4034D0659318 /* Pods_GFSnackBarView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02A78D21CF8F78AB9BAACD0AFC496D02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74CCFEB09AE48501C6A11AE709D3771 /* GFSnackBarView-umbrella.h in Headers */,
+				8812382EC3ECFC44E51C7BA231D4FBD9 /* GFSnackBarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED2161F822D7F43463B87DA0416410 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05405A6DE9C94F6BC039CC118A3AAF1 /* Pods-GFSnackBarView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB6BC6A5D685710195F5CFA6A26149E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4013D183EF3041F79CEADC9F86CDC7 /* Pods-GFSnackBarView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D10E9C6CA21CE6619418F4069D8E144 /* Pods-GFSnackBarView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BAE6E0A4FB506508D70EB8442C36E9 /* Build configuration list for PBXNativeTarget "Pods-GFSnackBarView_Example" */;
+			buildPhases = (
+				6AED2161F822D7F43463B87DA0416410 /* Headers */,
+				751A13BE3F30AD6809D67460DFC350BC /* Sources */,
+				823574877B3BB7CA5A09C1C8ED68CA70 /* Frameworks */,
+				256652318AC44DDE0569896C75A26DA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6B3AD53BAC2587249687CE80CCE1A2E /* PBXTargetDependency */,
+			);
+			name = "Pods-GFSnackBarView_Example";
+			productName = "Pods-GFSnackBarView_Example";
+			productReference = 23C2F8A1E1A1C1AA2C5A1FFF4F9FD0C1 /* Pods_GFSnackBarView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA8906A2ECB0A2B25C08FDD8538E7AFE /* GFSnackBarView-GFSnackBarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B08A8FB6099114D8C80155D6FA282F6 /* Build configuration list for PBXNativeTarget "GFSnackBarView-GFSnackBarView" */;
+			buildPhases = (
+				8882E0A58A7FEE7F42A35EC2B9997B97 /* Sources */,
+				5B1EF1BF57C9DBFD1DC8CF5E57706B06 /* Frameworks */,
+				5CB84E349DF37A7EFBB41E6C7936868D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GFSnackBarView-GFSnackBarView";
+			productName = "GFSnackBarView-GFSnackBarView";
+			productReference = 31348773F6BF92C3215C41776D949520 /* GFSnackBarView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D530B8322EDC27AC37419BCFD1F50BFA /* GFSnackBarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5AFF5632D94F7C81957B39E429F8779 /* Build configuration list for PBXNativeTarget "GFSnackBarView" */;
+			buildPhases = (
+				02A78D21CF8F78AB9BAACD0AFC496D02 /* Headers */,
+				2C43912FC29EA670E2E609B163A86C9B /* Sources */,
+				92D3003AFEC32DEE0D97E55FF2A0903A /* Frameworks */,
+				F35E880ED24797308A67F1E973EEC454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCB5871089598561AD92377083A05225 /* PBXTargetDependency */,
+			);
+			name = GFSnackBarView;
+			productName = GFSnackBarView;
+			productReference = CB11C9AFB56231670897F74007480488 /* GFSnackBarView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0B460D254A3416C740219BC8CBC253D /* Pods-GFSnackBarView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ECE2EF2D12759F36821CB5809879C84 /* Build configuration list for PBXNativeTarget "Pods-GFSnackBarView_Tests" */;
+			buildPhases = (
+				7BB6BC6A5D685710195F5CFA6A26149E /* Headers */,
+				BCBBCD16588D3BF86E776BDC53EEC562 /* Sources */,
+				17C848AFE594834EA431CFB8CA82F963 /* Frameworks */,
+				9C3A5B134D1C1077A27D7076C27057DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C8D0A54463B85AB1A56E35B5EA1498A /* PBXTargetDependency */,
+			);
+			name = "Pods-GFSnackBarView_Tests";
+			productName = "Pods-GFSnackBarView_Tests";
+			productReference = 2F4B9A0911009A39DCCC4034D0659318 /* Pods_GFSnackBarView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E572393D6A4301AD2BFCDDC3E02E7FDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D530B8322EDC27AC37419BCFD1F50BFA /* GFSnackBarView */,
+				CA8906A2ECB0A2B25C08FDD8538E7AFE /* GFSnackBarView-GFSnackBarView */,
+				0D10E9C6CA21CE6619418F4069D8E144 /* Pods-GFSnackBarView_Example */,
+				E0B460D254A3416C740219BC8CBC253D /* Pods-GFSnackBarView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		256652318AC44DDE0569896C75A26DA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB84E349DF37A7EFBB41E6C7936868D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E998AD127E231E54C66093900C5E4D5 /* GFSnackBarView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3A5B134D1C1077A27D7076C27057DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35E880ED24797308A67F1E973EEC454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC804D0644CD42902041002163C6CA0 /* GFSnackBarView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C43912FC29EA670E2E609B163A86C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A6C31A5BD8BF83004373EFF60ACD2 /* GFSnackBarView-dummy.m in Sources */,
+				625A2FB211532074D1616C3691AEF6DF /* GFSnackBarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751A13BE3F30AD6809D67460DFC350BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72CB61FB5E6063D05B510CA3303D653A /* Pods-GFSnackBarView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8882E0A58A7FEE7F42A35EC2B9997B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBBCD16588D3BF86E776BDC53EEC562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE05F40ED032E036080DFC841EE71A1 /* Pods-GFSnackBarView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C8D0A54463B85AB1A56E35B5EA1498A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GFSnackBarView_Example";
+			target = 0D10E9C6CA21CE6619418F4069D8E144 /* Pods-GFSnackBarView_Example */;
+			targetProxy = 3071EDE900C508CD33EF82724982B8DD /* PBXContainerItemProxy */;
+		};
+		A6B3AD53BAC2587249687CE80CCE1A2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GFSnackBarView;
+			target = D530B8322EDC27AC37419BCFD1F50BFA /* GFSnackBarView */;
+			targetProxy = 06FDDD64F07596B31A357B3770A91931 /* PBXContainerItemProxy */;
+		};
+		BCB5871089598561AD92377083A05225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GFSnackBarView-GFSnackBarView";
+			target = CA8906A2ECB0A2B25C08FDD8538E7AFE /* GFSnackBarView-GFSnackBarView */;
+			targetProxy = B51ABFFC97BA8EE1566719384CB85530 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		263D1D79F252F6A02904F92D11EC2394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9AEA5D3E1214F3036E65C822E62939 /* GFSnackBarView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GFSnackBarView";
+				IBSC_MODULE = GFSnackBarView;
+				INFOPLIST_FILE = "Target Support Files/GFSnackBarView/ResourceBundle-GFSnackBarView-GFSnackBarView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = GFSnackBarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		2A9AD5841E0D04768211259D3FB4D53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9AEA5D3E1214F3036E65C822E62939 /* GFSnackBarView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GFSnackBarView/GFSnackBarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GFSnackBarView/GFSnackBarView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GFSnackBarView/GFSnackBarView.modulemap";
+				PRODUCT_MODULE_NAME = GFSnackBarView;
+				PRODUCT_NAME = GFSnackBarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		869FE639E6D6C3CE2879DC5918BA0997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E2372C9A0E236B41B14B26E64A68DE /* Pods-GFSnackBarView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GFSnackBarView_Tests/Pods-GFSnackBarView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GFSnackBarView_Tests/Pods-GFSnackBarView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		897E26D4D285223D93B6B9C7DFCD22CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C6EA47CC5DA187FBB1D6325621E5240 /* Pods-GFSnackBarView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GFSnackBarView_Example/Pods-GFSnackBarView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GFSnackBarView_Example/Pods-GFSnackBarView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB03D007837E27BF5E61621E66E6B3C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF40E272DABF04175540D2FF36024609 /* Pods-GFSnackBarView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GFSnackBarView_Tests/Pods-GFSnackBarView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GFSnackBarView_Tests/Pods-GFSnackBarView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8B2381B4447A4337DB8A52F522B04C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611C1110AA494F75E6797D61D81C4ECB /* Pods-GFSnackBarView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GFSnackBarView_Example/Pods-GFSnackBarView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GFSnackBarView_Example/Pods-GFSnackBarView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB6CA7EEB9DD4895A30BD9869D9C6029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9AEA5D3E1214F3036E65C822E62939 /* GFSnackBarView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GFSnackBarView";
+				IBSC_MODULE = GFSnackBarView;
+				INFOPLIST_FILE = "Target Support Files/GFSnackBarView/ResourceBundle-GFSnackBarView-GFSnackBarView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = GFSnackBarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F225362F2BB0336507C08333BCCDAB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9AEA5D3E1214F3036E65C822E62939 /* GFSnackBarView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GFSnackBarView/GFSnackBarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GFSnackBarView/GFSnackBarView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GFSnackBarView/GFSnackBarView.modulemap";
+				PRODUCT_MODULE_NAME = GFSnackBarView;
+				PRODUCT_NAME = GFSnackBarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03BAE6E0A4FB506508D70EB8442C36E9 /* Build configuration list for PBXNativeTarget "Pods-GFSnackBarView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897E26D4D285223D93B6B9C7DFCD22CC /* Debug */,
+				D8B2381B4447A4337DB8A52F522B04C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B08A8FB6099114D8C80155D6FA282F6 /* Build configuration list for PBXNativeTarget "GFSnackBarView-GFSnackBarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6CA7EEB9DD4895A30BD9869D9C6029 /* Debug */,
+				263D1D79F252F6A02904F92D11EC2394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ECE2EF2D12759F36821CB5809879C84 /* Build configuration list for PBXNativeTarget "Pods-GFSnackBarView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				869FE639E6D6C3CE2879DC5918BA0997 /* Debug */,
+				AB03D007837E27BF5E61621E66E6B3C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5AFF5632D94F7C81957B39E429F8779 /* Build configuration list for PBXNativeTarget "GFSnackBarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9AD5841E0D04768211259D3FB4D53E /* Debug */,
+				F225362F2BB0336507C08333BCCDAB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

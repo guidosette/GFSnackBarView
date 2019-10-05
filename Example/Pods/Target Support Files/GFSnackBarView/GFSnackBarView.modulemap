@@ -1,0 +1,6 @@
+framework module GFSnackBarView {
+  umbrella header "GFSnackBarView-umbrella.h"
+
+  export *
+  module * { export * }
+}

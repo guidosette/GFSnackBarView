@@ -1,0 +1,27 @@
+{
+  "name": "GFSnackBarView",
+  "version": "0.1.0",
+  "summary": "Simple and customizable Snackbar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/guidosette/GFSnackBarView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "guidosette": "guido.fanfani7@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/guidosette/GFSnackBarView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GFSnackBarView/Classes/**/*",
+  "resource_bundles": {
+    "GFSnackBarView": [
+      "GFSnackBarView/Assets/*.xib"
+    ]
+  }
+}

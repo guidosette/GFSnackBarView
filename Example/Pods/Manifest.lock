@@ -1,0 +1,16 @@
+PODS:
+  - GFSnackBarView (0.1.0)
+
+DEPENDENCIES:
+  - GFSnackBarView (from `../`)
+
+EXTERNAL SOURCES:
+  GFSnackBarView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GFSnackBarView: 686778548815b8a465f08a21dc0b7e90b22f2c58
+
+PODFILE CHECKSUM: 50ff1c6c7c845b5432ae1ec1a8c3ed26544a2cd2
+
+COCOAPODS: 1.8.1
