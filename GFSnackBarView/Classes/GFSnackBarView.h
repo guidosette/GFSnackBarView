@@ -26,17 +26,19 @@
 /**
  Show snack bar with message and title error.
  @param message A NSString value that determinate the message to show.
- @param titleError A NSString value that determinate the title to show (in red color).
+ @param title A NSString value that determinate the title to show.
+ @param isError A Boolean value that determinate the title's color.
  */
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError;
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)title isError:(bool)isError;
 
 /**
  Show snack bar with message and title error.
  @param message A NSString value that determinate the message to show.
- @param titleError A NSString value that determinate the title to show (in red color).
+ @param title A NSString value that determinate the title to show.
+ @param isError A Boolean value that determinate the title's color.
  @param permanent message not hide.
  */
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError permanent:(bool)permanent;
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)title isError:(bool)isError permanent:(bool)permanent;
 
 /**
  Show snack bar with message and loading view.
@@ -52,22 +54,24 @@
 /**
  Show snack bar with message and title error.
  @param message A NSString value that determinate the message to show.
- @param titleError A NSString value that determinate the title to show (in red color).
+ @param title A NSString value that determinate the title to show.
+ @param isError A Boolean value that determinate the title's color.
  @param buttonDoneLabel A NSString value that determinate the title of the button
  @param buttonDoneCallback a block called when click button done
  */
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback;
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)title isError:(bool)isError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback;
 
 /**
  Show snack bar with message and title error.
  @param message A NSString value that determinate the message to show.
- @param titleError A NSString value that determinate the title to show (in red color).
+ @param title A NSString value that determinate the title to show.
+ @param isError A Boolean value that determinate the title's color.
  @param buttonDoneLabel A NSString value that determinate the title of the done button
  @param buttonDoneCallback a block called when click done button
  @param buttonCancelLabel A NSString value that determinate the title of the cancel button
  @param buttonCancelCallback a block called when click cancel button
  */
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)title isError:(bool)isError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback
 		buttonCancelLabel:(NSString*)buttonCancelLabel buttonCancelCallback:(void (^)(void))buttonCancelCallback;
 
 @end

@@ -7,6 +7,8 @@
 
 ## Example
 
+Simple and customizable Snackbar. You can use it to show message, message with error, with loading or to confirm.
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements

@@ -2,7 +2,7 @@
   "name": "GFSnackBarView",
   "version": "0.1.0",
   "summary": "Simple and customizable Snackbar.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "Simple and customizable Snackbar. You can use it to show message, message with error, with loading or to confirm.",
   "homepage": "https://github.com/guidosette/GFSnackBarView",
   "license": {
     "type": "MIT",

@@ -22,53 +22,74 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="f7Z-6T-0ic">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SEy-qj-zK7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ0-Xc-4oA">
+                                                <rect key="frame" x="0.0" y="38.5" width="218.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PtD-zx-Jud">
+                                                <rect key="frame" x="218.5" y="33" width="158.5" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-m8-s3U">
+                                        <rect key="frame" x="0.0" y="97" width="375" height="97"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb1-hm-vWk">
+                                                <rect key="frame" x="0.0" y="38.5" width="227" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jC7-xX-EVi">
+                                                <rect key="frame" x="227" y="33" width="150" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RS1-mm-WfS">
+                                        <rect key="frame" x="0.0" y="194" width="375" height="97"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permanent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EC-vy-vvE">
+                                                <rect key="frame" x="0.0" y="38.5" width="236.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NJ2-kR-mjJ">
+                                                <rect key="frame" x="236.5" y="33" width="140.5" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSG-jb-EcJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
-                                        <state key="normal" title="Show simple"/>
+                                        <rect key="frame" x="0.0" y="291" width="375" height="94"/>
+                                        <state key="normal" title="Show message"/>
                                         <connections>
-                                            <action selector="showSimple" destination="whP-gf-Uak" eventType="touchUpInside" id="Gco-P6-Wmr"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdv-Mz-biV">
-                                        <rect key="frame" x="0.0" y="95.5" width="375" height="95"/>
-                                        <state key="normal" title="Show simple permanent"/>
-                                        <connections>
-                                            <action selector="showSimplePermanent" destination="whP-gf-Uak" eventType="touchUpInside" id="TJ2-el-VNU"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOI-xv-96x">
-                                        <rect key="frame" x="0.0" y="190.5" width="375" height="95.5"/>
-                                        <state key="normal" title="Show error"/>
-                                        <connections>
-                                            <action selector="showSimpleError" destination="whP-gf-Uak" eventType="touchUpInside" id="qtP-W6-qob"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMs-rg-ilA">
-                                        <rect key="frame" x="0.0" y="286" width="375" height="95"/>
-                                        <state key="normal" title="Show error permanent"/>
-                                        <connections>
-                                            <action selector="showSimpleErrorPermanent" destination="whP-gf-Uak" eventType="touchUpInside" id="9Hs-4K-tdO"/>
+                                            <action selector="show" destination="whP-gf-Uak" eventType="touchUpInside" id="XqI-oF-fY6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1K8-hI-dKi">
-                                        <rect key="frame" x="0.0" y="381" width="375" height="95.5"/>
+                                        <rect key="frame" x="0.0" y="385" width="375" height="94"/>
                                         <state key="normal" title="Show with loading"/>
                                         <connections>
-                                            <action selector="showMessageWithLoading" destination="whP-gf-Uak" eventType="touchUpInside" id="1Tc-Rw-EzO"/>
+                                            <action selector="showMessageWithLoading" destination="whP-gf-Uak" eventType="touchUpInside" id="ex4-t2-wEg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpq-7T-j0e">
-                                        <rect key="frame" x="0.0" y="476.5" width="375" height="95"/>
+                                        <rect key="frame" x="0.0" y="479" width="375" height="94"/>
                                         <state key="normal" title="Show with button"/>
                                         <connections>
-                                            <action selector="showMessageCallback" destination="whP-gf-Uak" eventType="touchUpInside" id="vJ8-Ca-hdJ"/>
+                                            <action selector="showMessageCallback" destination="whP-gf-Uak" eventType="touchUpInside" id="boz-HL-tBf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQE-T4-aJq">
-                                        <rect key="frame" x="0.0" y="571.5" width="375" height="95.5"/>
+                                        <rect key="frame" x="0.0" y="573" width="375" height="94"/>
                                         <state key="normal" title="Show confirm"/>
                                         <connections>
-                                            <action selector="showMessageConfirmCallback" destination="whP-gf-Uak" eventType="touchUpInside" id="mT3-bm-ann"/>
+                                            <action selector="showMessageConfirmCallback" destination="whP-gf-Uak" eventType="touchUpInside" id="MVd-xG-jap"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -82,6 +103,11 @@
                             <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="f7Z-6T-0ic" secondAttribute="bottom" id="twG-fk-GNY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="permanent" destination="NJ2-kR-mjJ" id="Ckd-t2-4Fu"/>
+                        <outlet property="titleError" destination="jC7-xX-EVi" id="bBp-EF-YXJ"/>
+                        <outlet property="withTitle" destination="PtD-zx-Jud" id="seJ-r1-T9D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

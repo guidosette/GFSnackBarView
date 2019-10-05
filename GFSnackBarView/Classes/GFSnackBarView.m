@@ -12,7 +12,6 @@ const int heightView = 120;
 const float animationDuration = 0.3;
 const float hideDelay = 2.0;
 
-
 @interface GFSnackBarView ()
 
 @property CGRect screenRect;
@@ -91,6 +90,7 @@ const float hideDelay = 2.0;
 		_buttonDoneCallback();
 	}
 	_buttonDoneCallback = nil;
+	_buttonCancelCallback = nil;
 	[self hide];
 }
 
@@ -99,28 +99,8 @@ const float hideDelay = 2.0;
 		_buttonCancelCallback();
 	}
 	_buttonCancelCallback = nil;
+	_buttonDoneCallback = nil;
 	[self hide];
-}
-
-- (void)setConstraintWithError:(bool)withErrorLabel withLoading:(bool)withLoading {
-	if (withErrorLabel) {
-		//no loading, error
-		[_loading stopAnimating];
-		_isLoading = false;
-		_title.hidden = false;
-	} else if (!withLoading) {
-		//no loading, no error
-		[_loading stopAnimating];
-		_isLoading = false;
-		_title.text = @"";
-		_title.hidden = true;
-	} else {
-		//loading, no error
-		_isLoading = true;
-		_title.text = @"";
-		_title.hidden = true;
-		[_loading startAnimating];
-	}
 }
 
 + (void)updateRootView:(UIView*)rootView {
@@ -129,35 +109,35 @@ const float hideDelay = 2.0;
 }
 
 + (void)showWithMessage:(NSString*)message {
-	[GFSnackBarView showGeneralWithMessage:message error:false withTitleError:nil withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
+	[GFSnackBarView showGeneralWithMessage:message withTitle:nil titleError:false withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
 }
 
 + (void)showWithMessage:(NSString*)message permanent:(bool)permanent {
-	[GFSnackBarView showGeneralWithMessage:message error:false withTitleError:nil withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:permanent];
+	[GFSnackBarView showGeneralWithMessage:message withTitle:nil titleError:false withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:permanent];
 }
 
 + (void)showMessageWithLoading:(NSString*)message {
-	[GFSnackBarView showGeneralWithMessage:message error:false withTitleError:nil withLoading:true buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
+	[GFSnackBarView showGeneralWithMessage:message withTitle:nil titleError:false withLoading:true buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
 }
 
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError {
-	[GFSnackBarView showGeneralWithMessage:message error:true withTitleError:titleError withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)titleError isError:(bool)isError {
+	[GFSnackBarView showGeneralWithMessage:message withTitle:titleError titleError:isError withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
 }
 
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError permanent:(bool)permanent {
-	[GFSnackBarView showGeneralWithMessage:message error:true withTitleError:titleError withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:permanent];
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)title isError:(bool)isError permanent:(bool)permanent {
+	[GFSnackBarView showGeneralWithMessage:message withTitle:title titleError:isError withLoading:false buttonDoneLabel:nil buttonDoneCallback:nil buttonCancelLabel:nil buttonCancelCallback:nil permanent:permanent];
 }
 
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback {
-	[GFSnackBarView showGeneralWithMessage:message error:true withTitleError:titleError withLoading:false buttonDoneLabel:buttonDoneLabel buttonDoneCallback:buttonDoneCallback buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)title isError:(bool)isError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback {
+	[GFSnackBarView showGeneralWithMessage:message withTitle:title titleError:isError withLoading:false buttonDoneLabel:buttonDoneLabel buttonDoneCallback:buttonDoneCallback buttonCancelLabel:nil buttonCancelCallback:nil permanent:false];
 }
 
-+ (void)showWithMessage:(NSString*)message withTitleError:(NSString*)titleError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback
++ (void)showWithMessage:(NSString*)message withTitle:(NSString*)title isError:(bool)isError buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback
 	  buttonCancelLabel:(NSString*)buttonCancelLabel buttonCancelCallback:(void (^)(void))buttonCancelCallback {
-	[GFSnackBarView showGeneralWithMessage:message error:true withTitleError:titleError withLoading:false buttonDoneLabel:buttonDoneLabel buttonDoneCallback:buttonDoneCallback buttonCancelLabel:buttonCancelLabel buttonCancelCallback:buttonCancelCallback permanent:false];
+	[GFSnackBarView showGeneralWithMessage:message withTitle:title titleError:isError withLoading:false buttonDoneLabel:buttonDoneLabel buttonDoneCallback:buttonDoneCallback buttonCancelLabel:buttonCancelLabel buttonCancelCallback:buttonCancelCallback permanent:false];
 }
 
-+ (void)showGeneralWithMessage:(NSString*)message error:(bool)error withTitleError:(NSString*)titleError withLoading:(bool)withLoading buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback buttonCancelLabel:(NSString*)buttonCancelLabel buttonCancelCallback:(void (^)(void))buttonCancelCallback permanent:(bool)permanent {
++ (void)showGeneralWithMessage:(NSString*)message withTitle:(NSString*)title titleError:(bool)titleError withLoading:(bool)withLoading buttonDoneLabel:(NSString*)buttonDoneLabel buttonDoneCallback:(void (^)(void))buttonDoneCallback buttonCancelLabel:(NSString*)buttonCancelLabel buttonCancelCallback:(void (^)(void))buttonCancelCallback permanent:(bool)permanent {
 	GFSnackBarView *view = [GFSnackBarView privateInstance];
 	view.isShow = true;
 	
@@ -172,21 +152,22 @@ const float hideDelay = 2.0;
 	} else {
 		view.message.text = message;
 	}
-	view.title.text = titleError;
+	view.title.text = title;
 	view.permanent = permanent;
-	[view setConstraintWithError:error withLoading:withLoading];
 	
-	if (titleError == nil) {
-		view.title.hidden = true;
+	if (!withLoading) {
+		[view.loading stopAnimating];
+		view.isLoading = false;
 	} else {
-		view.title.hidden = false;
+		view.isLoading = true;
+		[view.loading startAnimating];
 	}
 	
-	if (message == nil) {
-		view.message.hidden = true;
-	} else {
-		view.message.hidden = false;
-	}
+	view.title.hidden = title == nil ? true : false;
+	
+	view.title.textColor = titleError ? [UIColor redColor] : [UIColor lightGrayColor];
+	
+	view.message.hidden = message == nil ? true : false;
 	
 	if (buttonDoneLabel!=nil) {
 		view.buttonDone.hidden = false;
@@ -201,12 +182,10 @@ const float hideDelay = 2.0;
 		view.buttonDoneConstraintX.constant = 24;
 		view.buttonCancelConstraintX.constant = -24;
 		[view.buttonCancel setTitle:buttonCancelLabel forState:UIControlStateNormal];
-		view.title.textColor = [UIColor lightGrayColor];
 	} else {
 		view.buttonDoneConstraintX.constant = 0;
 		view.buttonCancelConstraintX.constant = 0;
 		view.buttonCancel.hidden = true;
-		view.title.textColor = [UIColor colorWithRed:255 green:47 blue:43 alpha:1.0];
 	}
 	view.buttonCancelCallback = buttonCancelCallback;
 	
@@ -225,7 +204,6 @@ const float hideDelay = 2.0;
 }
 
 - (void)hide {
-	//    SnackBarView *view = [SnackBarView privateInstance];
 	if (!_isShow) {
 		//        NSLog(@"Snackbar already hide");
 		return;
@@ -234,7 +212,7 @@ const float hideDelay = 2.0;
 		//        NSLog(@"Snackbar is loading");
 		return;
 	}
-	if (_buttonDoneCallback!=nil) {
+	if (_buttonDoneCallback!=nil || _buttonCancelCallback!=nil) {
 		//        NSLog(@"Snackbar has buttonDoneCallback");
 		return;
 	}

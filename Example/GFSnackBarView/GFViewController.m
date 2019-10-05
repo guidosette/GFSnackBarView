@@ -10,6 +10,9 @@
 #import "GFSnackBarView.h"
 
 @interface GFViewController ()
+@property (strong, nonatomic) IBOutlet UISwitch *withTitle;
+@property (strong, nonatomic) IBOutlet UISwitch *titleError;
+@property (strong, nonatomic) IBOutlet UISwitch *permanent;
 
 @end
 
@@ -20,20 +23,8 @@
     [super viewDidLoad];
 }
 
-- (IBAction) showSimple {
-	[GFSnackBarView showWithMessage:@"Test"];
-}
-
-- (IBAction) showSimplePermanent {
-	[GFSnackBarView showWithMessage:@"Test" permanent:true];
-}
-
-- (IBAction) showSimpleError {
-	[GFSnackBarView showWithMessage:@"Test error" withTitleError:@"Error"];
-}
-
-- (IBAction) showSimpleErrorPermanent {
-	[GFSnackBarView showWithMessage:@"Test" withTitleError:@"Error" permanent:true];
+- (IBAction) show {
+	[GFSnackBarView showWithMessage:@"Test error" withTitle:_withTitle.on ? @"Error" : nil isError:_titleError.on permanent:_permanent.on];
 }
 
 - (IBAction) showMessageWithLoading {
@@ -41,13 +32,15 @@
 }
 
 - (IBAction) showMessageCallback {
-	[GFSnackBarView showWithMessage:@"Test" withTitleError:@"Error" buttonDoneLabel:@"Ok" buttonDoneCallback:^{
+	_permanent.on = true;
+	[GFSnackBarView showWithMessage:@"Test" withTitle:_withTitle.on ? @"Error" : nil isError:_titleError.on buttonDoneLabel:@"Ok" buttonDoneCallback:^{
 		NSLog(@"Done");
 	}];
 }
 
 - (IBAction) showMessageConfirmCallback {
-	[GFSnackBarView showWithMessage:@"Test" withTitleError:@"Error" buttonDoneLabel:@"Ok" buttonDoneCallback:^{
+	_permanent.on = true;
+	[GFSnackBarView showWithMessage:@"Test" withTitle:_withTitle.on ? @"Error" : nil isError:_titleError.on buttonDoneLabel:@"Ok" buttonDoneCallback:^{
 		NSLog(@"Done");
 	} buttonCancelLabel:@"Cancel" buttonCancelCallback:^{
 		NSLog(@"Cancel");

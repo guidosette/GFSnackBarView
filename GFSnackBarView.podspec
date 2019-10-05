@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Simple and customizable Snackbar. You can use it to show message, message with error, with loading or to confirm.
                        DESC
 
   s.homepage         = 'https://github.com/guidosette/GFSnackBarView'
