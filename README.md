@@ -7,9 +7,9 @@
 
 ## Example
 
-![Alt Text](https://github.com/guidosette/GFLoadingAnimationView/blob/master/screenshot.png)
+![Alt Text](https://github.com/guidosette/GFSnackBarView/blob/master/screenshot.png)
 
-![Alt Text](https://github.com/guidosette/GFLoadingAnimationView/blob/master/screenshot2.png)
+![Alt Text](https://github.com/guidosette/GFSnackBarView/blob/master/screenshot2.png)
 
 Simple and customizable Snackbar. You can use it to show message, message with error, with loading or to confirm.
 
