@@ -26,7 +26,7 @@ Simple and customizable Snackbar. You can use it to show message, message with e
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'guidosette' => 'guido.fanfani7@gmail.com' }
   s.source           = { :git => 'https://github.com/guidosette/GFSnackBarView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+	s.social_media_url = 'https://twitter.com/Guidosette'
 
   s.ios.deployment_target = '8.0'
 
